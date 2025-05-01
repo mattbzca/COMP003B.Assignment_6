@@ -1,3 +1,9 @@
+/*
+ * Author: Matthew Tan 
+ * Course: COMP-003B
+ * Faculty Name: Jonathan Cruz
+ * Purpose: Demonstrate competency in working with relational databases using EF.
+ */
 namespace COMP003B.Assignment_6
 {
     public class Program
