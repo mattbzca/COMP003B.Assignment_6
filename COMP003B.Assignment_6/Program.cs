@@ -4,6 +4,8 @@
  * Faculty Name: Jonathan Cruz
  * Purpose: Demonstrate competency in working with relational databases using EF.
  */
+using COMP003B.Assignment_6.Data;
+using Microsoft.EntityFrameworkCore;
 namespace COMP003B.Assignment_6
 {
     public class Program
@@ -14,6 +16,9 @@ namespace COMP003B.Assignment_6
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<WebDevAcademyContext>(options =>
+            options.UseSqlServer("Name=ConnectionStrings:DefaultConnection"));
 
             var app = builder.Build();
 
